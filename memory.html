@@ -1,12 +1,19 @@
 <html>
 <head>
   <style>
+    nav{
+      position: relative;
+      margin: 20px;
+    }
     section{
       height:300px;
       width:200px;
       border: 2px solid black;
       background-color: green;
       border-radius: 10px;
+      position: absolute;
+      top:0;
+      left:0;
     }
     .question{
       background-color:blue;
@@ -17,23 +24,29 @@
   </style>
 </head>
   <body>
+  <nav>
     <section class='question'>
       <p>What is your favorite Color?</p>
     </section>
     <section class='answer'>
       <p>Blue</p>
     </section>
+  </nav>
+  <nav>
     <section class='question'>
       <p>What is your favorite Team?</p>
     </section>
     <section class='answer'>
       <p>Minnesota Twins</p>
     </section>
+  </nav>
+  <nav>
     <section class='question'>
       <p>What is your favorite Athlete?</p>
     </section>
     <section class='answer'>
       <p>Lebron James</p>
     </section>
+  </nav>
   </body>
 </html>
