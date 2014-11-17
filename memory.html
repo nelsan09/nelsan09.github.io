@@ -15,7 +15,6 @@
       background-color: green;
       border-radius: 10px;
       position: absolute;
-
     }
     .question{
       background-color:blue;
@@ -27,12 +26,16 @@
     nav:hover .question{
       display: none;
     }
+    li#b{
+      top:0;
+      left:300;
+    }
   </style>
 </head>
   <body>
   <nav>
   <ul>
-    <li>
+    <li id='a'>
       <section class='question'>
         <p>What is your favorite Color?</p>
       </section>
@@ -40,7 +43,7 @@
         <p>Blue</p>
       </section>
     </li>
-    <li>
+    <li id='b'>
       <section class='question'>
         <p>What is your favorite Team?</p>
       </section>
@@ -48,7 +51,7 @@
         <p>Minnesota Twins</p>
       </section>
     </li>
-    <li>
+    <li id='c'>
       <section class='question'>
         <p>What is your favorite Athlete?</p>
       </section>
