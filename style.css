@@ -12,6 +12,9 @@ nav{
         margin-bottom: 0px;
         background-color: green;
         }
+nav ul{
+        margin:0px;
+        }
 nav li{
         display: inline;
         }
@@ -26,7 +29,7 @@ aside{
         float: left;
         width: 80%;
         height: 500px;
-        background-color: red;
+        background-image: url('http://www.nrcc.org/wp-content/uploads/2013/03/BG-Basketball_Court1.jpg');
         }
 footer{
         clear: both;
@@ -41,6 +44,3 @@ h1{
   background-color: blue;
   }
   
-body{
-  background-image: url('http://www.nrcc.org/wp-content/uploads/2013/03/BG-Basketball_Court1.jpg');
-}
