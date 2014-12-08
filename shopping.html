@@ -14,14 +14,15 @@
       </select>
       <button onclick="addItem();">Add</button>
       
-      <script>
+      <script type="text/javascript">
        addItem = function() {
            anItem = document.createTextNode(document.querySelector('#item').value);
            aType = document.querySelector('#type').value;
            theList= document.querSelector('#list');
            li= document.createElement("li");
-           theList.appendChild(li);
+           
            li.appendChild(anItem);
+           theList.appendChild(li);
            //document.body.style.backgroundColor = colorStr;
        }
      </script>
