@@ -16,8 +16,9 @@
       
       <script type="text/javascript">
        addItem = function() {
-           myNewItem = document.querySelector('#item').value;
-           myItemNode = document.createTextNode(myNewItem);
+           myNewItem = document.querySelector('#item');
+           myNewItem2=document.querySelector('#item').value;
+           myItemNode = document.createTextNode(myNewItem2);
            aType = document.querySelector('#type').value;
            theList= document.querySelector('#list');
            li= document.createElement("li");
