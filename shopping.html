@@ -16,13 +16,15 @@
       
       <script type="text/javascript">
        addItem = function() {
-           anItem = document.createTextNode(document.querySelector('#item').value);
+           myNewItem = document.querySelector('#item').value;
+           myItemNode = document.createTextNode(myNewItem);
            aType = document.querySelector('#type').value;
            theList= document.querySelector('#list');
            li= document.createElement("li");
            
            li.appendChild(anItem);
            theList.appendChild(li);
+           theList.value="";
            //document.body.style.backgroundColor = colorStr;
        }
      </script>
