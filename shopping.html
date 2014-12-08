@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="shop.css" type="text/css">
   </head>
   <body >
-    <ul>
+    <ul id="list"></ul>
       <input type="text" id="item"/>
       <select id="type">
         <option>Meat</option>
@@ -12,7 +12,18 @@
         <option>Bread</option>
         <option>Fruit</option>
       </select>
-      <button>Add</button>
-    </ul>
+      <button onclick="addItem();">Add</button>
+      
+      <script>
+       addItem = function() {
+           anItem = document.querySelector('#item').value;
+           aType = document.querySelector('#type').value;
+           theList= document.querSelector('#list');
+           li= document.createElement("li");
+           theList.appendChild(li);
+           li.appendChild(anItem);
+           //document.body.style.backgroundColor = colorStr;
+       }
+     </script>
   </body>
 <html>
