@@ -22,7 +22,9 @@
            theList= document.querySelector('#list');
            li= document.createElement("li");
            li.classList.add(aType.value);
-           
+           cb= document.createElement("input");
+           cb.type="checkbox";
+           li.appendChild(cb);
            li.appendChild(myItemNode);
            theList.appendChild(li);
            myNewItem.value = " ";
