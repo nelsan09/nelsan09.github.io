@@ -24,11 +24,16 @@
            li.classList.add(aType.value);
            cb= document.createElement("input");
            cb.type="checkbox";
+           cb.onClick="checkMe()"
            li.appendChild(cb);
            li.appendChild(myItemNode);
            theList.appendChild(li);
            myNewItem.value = " ";
        }
+       checkMe = function() {
+         if this.parentNode
+       }
+       
      </script>
   </body>
 <html>
