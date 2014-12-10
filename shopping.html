@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>My First Website</title>
+    <title>Shopping List</title>
     <link rel="stylesheet" href="shop.css" type="text/css">
   </head>
   <body >
@@ -18,9 +18,10 @@
        addItem = function() {
            myNewItem = document.querySelector('#item');
            myItemNode = document.createTextNode(myNewItem.value);
-           aType = document.querySelector('#type').value;
+           aType = document.querySelector('#type');
            theList= document.querySelector('#list');
            li= document.createElement("li");
+           li.classList.add(aType.value);
            
            li.appendChild(myItemNode);
            theList.appendChild(li);
