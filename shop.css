@@ -13,3 +13,6 @@
 .li{
   width:10px;
 }  
+.ul{
+    list-style-type: none;
+}
